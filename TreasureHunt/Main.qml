@@ -13,6 +13,20 @@ Window {
     visible: true
     title: qsTr("Hello World")
 
+    function toLoginForm() {
+
+        authorization_page.state = "login_state"
+        stack_view.push(authorization_page);
+
+    }
+
+    function toRegisterForm() {
+
+        authorization_page.state = "register_state"
+        stack_view.push(authorization_page);
+
+    }
+
     StackView {
 
         id: stack_view
@@ -56,6 +70,11 @@ Window {
 
     MenuPage {
         id: menu_page
+    }
+
+    AuthorizationPage {
+        id: authorization_page
+        visible: false
     }
 
     FontLoader {

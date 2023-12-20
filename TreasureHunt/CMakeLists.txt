@@ -18,7 +18,7 @@ qt_add_executable(appTreasureHunt
 qt_add_qml_module(appTreasureHunt
     URI TreasureHunt
     VERSION 1.0
-    QML_FILES Main.qml MenuPage.qml
+    QML_FILES Main.qml MenuPage.qml AuthorizationPage.qml LoginForm.qml RegisterForm.qml
 )
 
 set_target_properties(appTreasureHunt PROPERTIES

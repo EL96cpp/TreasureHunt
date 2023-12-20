@@ -89,10 +89,15 @@ Page {
                 hoverEnabled: true
                 anchors.fill: parent
 
+                onClicked: {
+
+                    toLoginForm();
+
+                }
+
             }
 
         }
-
 
 
         Text {
@@ -114,6 +119,12 @@ Page {
                 id: register_mouse_area
                 hoverEnabled: true
                 anchors.fill: parent
+
+                onClicked: {
+
+                    toRegisterForm();
+
+                }
 
             }
 
@@ -146,7 +157,6 @@ Page {
 
 
     }
-
 
 
 }
