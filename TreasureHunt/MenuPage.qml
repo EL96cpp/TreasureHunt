@@ -48,7 +48,7 @@ Page {
             text: "Treasure Hunt"
 
             font.family: title_font.name
-            font.pointSize: 130
+            font.pointSize: 140
             font.letterSpacing: 5
             font.bold: true
             color: "#000000"
@@ -63,7 +63,6 @@ Page {
     Column {
 
         id: main_menu_column
-
         spacing: 40
 
         anchors.horizontalCenter: parent.horizontalCenter
@@ -74,9 +73,11 @@ Page {
 
             id: login_text
             text: "Login"
+            style: Text.Outline
+            styleColor: login_mouse_area.containsMouse ? "#000000" : "#ffffff"
             font.family: menu_font.name
-            font.pointSize: 100
-            font.letterSpacing: 5
+            font.pointSize: 120
+            font.letterSpacing: 10
             font.bold: true
             color: login_mouse_area.containsMouse ? text_hovered_color : "#000000"
 
@@ -92,13 +93,17 @@ Page {
 
         }
 
+
+
         Text {
 
             id: register_text
             text: "Register"
+            style: Text.Outline
+            styleColor: register_mouse_area.containsMouse ? "#000000" : "#ffffff"
             font.family: menu_font.name
-            font.pointSize: 100
-            font.letterSpacing: 5
+            font.pointSize: 120
+            font.letterSpacing: 10
             font.bold: true
             color: register_mouse_area.containsMouse ? text_hovered_color : "#000000"
 
@@ -114,13 +119,16 @@ Page {
 
         }
 
+
         Text {
 
             id: exit_text
             text: "Exit"
+            style: Text.Outline
+            styleColor: exit_mouse_area.containsMouse ? "#000000" : "#ffffff"
             font.family: menu_font.name
-            font.pointSize: 100
-            font.letterSpacing: 5
+            font.pointSize: 120
+            font.letterSpacing: 10
             font.bold: true
             color: exit_mouse_area.containsMouse ? text_hovered_color : "#000000"
 
@@ -135,6 +143,7 @@ Page {
             }
 
         }
+
 
     }
 
