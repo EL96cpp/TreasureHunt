@@ -12,6 +12,7 @@ qt_standard_project_setup()
 qt_add_executable(appTreasureHunt
     main.cpp
     Images.qrc
+    Fonts.qrc
 )
 
 qt_add_qml_module(appTreasureHunt

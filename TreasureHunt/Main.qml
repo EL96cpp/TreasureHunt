@@ -57,4 +57,20 @@ Window {
     MenuPage {
         id: menu_page
     }
+
+    FontLoader {
+
+        id: title_font
+        source: "qrc:/Fonts/Title_font.ttf"
+
+    }
+
+    FontLoader {
+
+        id: menu_font
+        source: "qrc:/Fonts/Menu_font.ttf"
+
+    }
+
+
 }
